@@ -1,7 +1,7 @@
 package com.TCC.Prato_Justo.Controller;
 
-import Model.Usuario;
-import Service.UsuarioService;
+import com.TCC.Prato_Justo.Model.Usuario;
+import com.TCC.Prato_Justo.Service.UsuarioService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
