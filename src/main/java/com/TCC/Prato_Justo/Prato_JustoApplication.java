@@ -9,5 +9,4 @@ public class Prato_JustoApplication {
     public static void main(String[] args) {
         SpringApplication.run(Prato_JustoApplication.class, args);
     }
-
 }

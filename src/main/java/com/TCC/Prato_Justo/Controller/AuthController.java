@@ -20,7 +20,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public String login(Usuario usuario){
+    public String login(@RequestBody Usuario usuario){
         Usuario user = usuarioService.fazerLogin(usuario.getUsername(), usuario.getPassword());
         if(user != null){
             return "Cadastro Realizado " + user.getUsername();
