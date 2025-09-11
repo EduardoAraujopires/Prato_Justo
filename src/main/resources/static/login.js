@@ -18,7 +18,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
         if (response.ok) {
             if (text.includes("Cadastro Realizado")) {
                 alert("Login realizado com sucesso!");
-                window.location.href = "dashboard.html"; // redireciona se quiser
+                window.location.href = "./cadastro.html"; // redireciona se quiser
             } else {
                 alert("Erro no login: " + text);
             }
