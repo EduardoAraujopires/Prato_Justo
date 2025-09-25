@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,8 +6,8 @@
     <title>Cadastro de Alimento - Prato Justo</title>
     <link rel="stylesheet" href="./cadastro_alimento.css">
 </head>
+<body>
 
-<!-- Seção Cadastrar Alimentos -->
 <section class="food-registration" id="cadastrar-alimentos">
     <div class="container">
         <div class="section-header">
@@ -50,25 +49,13 @@
                         <textarea id="description" name="description" placeholder="Descreva o alimento, condições de armazenamento, etc." rows="3"></textarea>
                     </div>
 
-                    <div class="location-section">
-                        <h4>Localização</h4>
-                        <div class="location-controls">
-                            <button type="button" id="getLocationBtn" class="btn-location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Usar Minha Localização
-                            </button>
-                            <span class="location-status" id="locationStatus">Localização não detectada</span>
-                        </div>
-                        <div class="location-inputs">
-                            <div class="form-group">
-                                <label for="address">Endereço</label>
-                                <input type="text" id="address" name="address" placeholder="Rua, número, bairro..." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="city">Cidade</label>
-                                <input type="text" id="city" name="city" placeholder="São Paulo" required>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" name="address" placeholder="Rua, número, bairro..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Cidade</label>
+                        <input type="text" id="city" name="city" placeholder="São Paulo" required>
                     </div>
 
                     <button type="submit" class="btn-primary btn-submit">
@@ -93,7 +80,7 @@
                             <div class="step-number">2</div>
                             <div class="step-content">
                                 <h4>Defina a Localização</h4>
-                                <p>Use a geolocalização ou informe o endereço</p>
+                                <p>Informe o endereço para doação</p>
                             </div>
                         </div>
                         <div class="info-step">
@@ -116,5 +103,7 @@
             </div>
         </div>
     </div>
-    <script src="./cadastro_alimento.js"></script>
 </section>
+</body>
+<script src="./cadastro_alimento.js"></script>
+</html>
